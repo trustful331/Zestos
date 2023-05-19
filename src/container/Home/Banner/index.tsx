@@ -4,10 +4,10 @@ export default function Banner() {
   return (
     <div className="md:px-0 container px-6">
       <div className="grid grid-cols-12 gap-5 py-[60px] items-center">
-        <div className="col-span-8 h-full">
+        <div className="col-span-12 h-full">
           <BannerCarousel />
         </div>
-        <div className="col-span-4">
+        {/* <div className="col-span-4">
           <div className="relative group rounded-[10px] mb-[20px] cursor-pointer min-h-[170px] max-h-[200px] overflow-hidden">
             <div className="absolute w-full h-full bg-gradient-to-r transition-all duration-200 from-[#279980cc] to-[#292d32cc] group-hover:z-10 opacity-0 group-hover:opacity-[1]" />
             <img
@@ -62,7 +62,7 @@ export default function Banner() {
               <FiArrowRight size={22} className="text-[#232728]" />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
