@@ -19,10 +19,10 @@ export default function Header() {
     setOpen(false);
   };
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-2xl">
+    <header className="sticky top-0 z-50 bg-white shadow">
       <div className={`container mx-auto md:px-0 px-6`}>
         <div className="flex items-center justify-between min-h-[70px]">
-          <img src="assets/images/logo.svg" className="h-12" />
+          <img src="assets/images/logo.png" className="w-20 shrink-0" />
           <nav className="flex items-center">
             <ul className="lg:flex items-center justify-between hidden gap-10">
               <li className="h-[40px] flex items-center">
