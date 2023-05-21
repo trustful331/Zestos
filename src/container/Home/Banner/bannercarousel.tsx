@@ -7,7 +7,7 @@ const settings = {
   navigation: false,
   slidesToShow: 1,
   infinite: true,
-  autoplay: false,
+  autoplay: true,
   speed: 500,
 };
 export default function bankcarousel() {

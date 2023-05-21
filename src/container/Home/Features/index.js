@@ -1,44 +1,8 @@
-import React, { useEffect, useState } from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { BsMicrosoftTeams } from "react-icons/bs";
 import { BiSupport } from "react-icons/bi";
 
-export default function Features() {
-  const [visibleSections, setVisibleSections] = useState([]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ["features"];
-      const newVisibleSections = [];
-      for (let i = 0; i < sections.length; i++) {
-        const section = document.getElementsByClassName(sections[i])[0];
-        const rect = section.getBoundingClientRect();
-        const sectionHeight = rect.height;
-        const sectionTop = rect.top;
-        const visiblePercentage =
-          (Math.min(
-            window.innerHeight - Math.max(sectionTop, 0),
-            sectionHeight
-          ) /
-            sectionHeight) *
-          100;
-        const isVisible = visiblePercentage >= 40;
-
-        if (isVisible) {
-          newVisibleSections.push(sections[i]);
-        }
-      }
-      setVisibleSections(newVisibleSections);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleScroll);
-    };
-  }, []);
+export default function Features({ visibleSections }) {
   return (
     <div className="container mt-28 features">
       <div className="grid grid-cols-2 gap-5 items-center">

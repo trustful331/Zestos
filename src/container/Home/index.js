@@ -1,11 +1,14 @@
 import Banner from "./Banner";
 import React, { useEffect, useState } from "react";
-import { BiBed, BiSupport } from "react-icons/bi";
+import { BiBed } from "react-icons/bi";
 import { TbBuildingEstate, TbBuildingSkyscraper } from "react-icons/tb";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Products from "./Products";
 import Features from "./Features";
+import BeatStress from "./BeatStress";
+import LiveLoveLife from "./LiveLoveLife";
+import App from "./App";
 
 export default function Home() {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -13,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     AOS.init();
     const handleScroll = () => {
-      const sections = ["devices", "comfort", "cities-bg"];
+      const sections = ["devices", "comfort", "features"];
       const newVisibleSections = [];
       for (let i = 0; i < sections.length; i++) {
         const section = document.getElementsByClassName(sections[i])[0];
@@ -27,7 +30,14 @@ export default function Home() {
           ) /
             sectionHeight) *
           100;
-        const isVisible = visiblePercentage >= 30;
+        let isVisible;
+        if (sections[i] == "devices") {
+          isVisible = visiblePercentage >= 30;
+        } else if (sections[i] == "comfort") {
+          isVisible = visiblePercentage >= 50;
+        } else if (sections[i] == "features") {
+          isVisible = visiblePercentage >= 40;
+        }
 
         if (isVisible) {
           newVisibleSections.push(sections[i]);
@@ -75,6 +85,31 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="container mt-12">
+        <h2 className="text-[6rem] font-extrabold text-center">
+          A Place Like{" "}
+          <span className="bg-gradient-to-r from-yellow to-green text-transparent bg-clip-text">
+            Home
+          </span>
+        </h2>
+        <div className="text-center min-w-[40vw] max-w-[20vw] mx-auto">
+          <h5 className="text-[19px] my-4 font-semibold text-black">
+            Discover Coliving Spaces That Resemble Your Home.
+          </h5>
+          <p className="text-[23px] font-normal leading-[37px] text-black">
+            Finding perfect coliving spaces in a new city can be tiring. If you
+            are a new bird in the city, then say no more. Before you say I miss
+            my home, hear us out. Cozy Stay offers you a complete co-living
+            space with a hassle-free, cost-effective, and peaceful living
+            experience, catering to individual needs. Now, no more worries about
+            the hygiene or the amenities you might require, coz we got it all
+            under covered.
+          </p>
+          <button className="mt-11 mb-12 bg-green rounded-full text-white px-16 py-3.5 border shadow-lg flex items-center gap-3 mx-auto">
+            Book Now
+          </button>
+        </div>
+      </div>
       <div className="relative mt-[200px] devices">
         <img
           src="/assets/images/device.png"
@@ -97,8 +132,9 @@ export default function Home() {
           }`}
         />
       </div>
-      <Products />
-      <Features />
+      <Products visibleSections={visibleSections} />
+      <Features visibleSections={visibleSections} />
+      {/* <App /> */}
       <div
         className="relative mt-[200px] cities-bg flex items-end"
         data-aos="fade-up"
@@ -124,8 +160,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <img src="/assets/images/clipper.png" className="w-full object-cover" /> */}
       </div>
+      <BeatStress />
+      <LiveLoveLife />
     </div>
   );
 }
