@@ -5,19 +5,25 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaPaperPlane } from "react-icons/fa";
 // import ContactForm from "../contactform";
 const Footer = () => (
-  <footer>
-    <div className="bg-green/20 py-[70px]">
-      <div className={`container mx-auto md:px-0 px-6`}>
-        <div className="grid grid-cols-12 gap-10">
-          <div className="col-span-3">
-            <h4 className="text-[20px] text-green font-semibold mb-4">
+  <footer className="overflow-hidden">
+    <div className="pt-[70px]">
+      <div className={`container mx-auto 2xl:px-0 px-6`}>
+        <div className="grid sm:grid-cols-12 grid-cols-1 lg:gap-10 gap-6">
+          <div className="lg:col-span-3 md:col-span-4 sm:col-span-6">
+            <div className="h-[100px] relative">
+              <img
+                src="assets/images/logo.png"
+                className="absolute top-[-53px] left-[-60px] h-[200px]"
+              />
+            </div>
+            <h4 className="text-[20px] text-green font-semibold mb-4 mt-4">
               Contact Us
             </h4>
             <ul>
               <li className="mb-4">
-                <div className="flex items-center gap-3">
-                  <RiMapPin2Fill size={18} className="shrink-0 text-white" />
-                  <p className="text-white text-[14px] leading-[20px]">
+                <div className="flex items-start gap-3">
+                  <RiMapPin2Fill size={18} className="shrink-0 text-green" />
+                  <p className="text-black text-[14px] leading-[20px]">
                     Level 12, Rolex Tower, Sheikh Zayed Road, Near Financial
                     Centre Metro Station, Dubai, UAE
                   </p>
@@ -27,144 +33,96 @@ const Footer = () => (
                 <div className="flex items-center gap-3">
                   <GrMapLocation
                     size={18}
-                    className="shrink-0 [&_path]:stroke-white"
+                    className="shrink-0 [&_path]:stroke-black"
                   />
-                  <p className="text-white text-[14px] leading-[20px]">
+                  <p className="text-black text-[14px] leading-[20px]">
                     Click for the Direction
                   </p>
                 </div>
               </li>
-              <li className="mb-4">
-                <div className="flex items-center gap-3">
-                  <GoDeviceMobile size={18} className="shrink-0 text-white" />
-                  <p className="text-white text-[14px] leading-[20px]">
-                    +971 56 408 6728
-                  </p>
-                </div>
-              </li>
+
               <li className="mb-4">
                 <div className="flex items-center gap-3">
                   <BsFillTelephoneFill
                     size={18}
-                    className="shrink-0 text-white"
+                    className="shrink-0 text-green"
                   />
-                  <p className="text-white text-[14px] leading-[20px]">
+                  <p className="text-black text-[14px] leading-[20px]">
                     +971 4 2690673
                   </p>
                 </div>
               </li>
               <li className="mb-4">
                 <div className="flex items-center gap-3">
-                  <FaPaperPlane size={18} className="shrink-0 text-white" />
-                  <p className="text-white text-[14px] leading-[20px]">
+                  <FaPaperPlane size={18} className="shrink-0 text-green" />
+                  <p className="text-black text-[14px] leading-[20px]">
                     sales@aaconsultancy.ae
                   </p>
                 </div>
               </li>
             </ul>
-            <h4 className="text-[20px] text-green font-semibold mb-4 mt-6">
-              Working Hours
-            </h4>
-            <ul>
-              <li className="mb-4">
-                <div className="flex items-center gap-3">
-                  <RiMapPin2Fill size={18} className="shrink-0 text-white" />
-                  <div>
-                    <p className="text-white text-[14px] leading-[20px]">
-                      Monday-Friday : 8:30 – 17:30
-                    </p>
-                    <p className="text-white text-[14px] leading-[20px]">
-                      Saturday : 8:30 – 12:30
-                    </p>
-                    <p className="text-white text-[14px] leading-[20px]">
-                      Sunday : Closed
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
           </div>
-          <div className="col-span-2">
-            <h4 className="text-[20px] text-green font-semibold mb-4">
+          <div className="lg:col-span-3 md:col-span-4 sm:col-span-6">
+            <div className="h-[100px] relative sm:block hidden"></div>
+            <h4 className="text-[20px] text-green font-semibold mb-4 mt-4">
               Business Setup
             </h4>
             <ul>
               <li className="mb-4">
-                <a href="#" className="text-white text-[14px] leading-[20px]">
-                  Link 1
+                <a href="#" className="text-black text-[14px] leading-[20px]">
+                  About us
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="text-white text-[14px] leading-[20px]">
-                  Link 2
+                <a href="#" className="text-black text-[14px] leading-[20px]">
+                  Career
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="text-white text-[14px] leading-[20px]">
-                  Link 3
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="text-white text-[14px] leading-[20px]">
-                  Link 4
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="text-white text-[14px] leading-[20px]">
-                  Link 5
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="text-white text-[14px] leading-[20px]">
-                  Link 5
+                <a href="#" className="text-black text-[14px] leading-[20px]">
+                  Cozy Clan
                 </a>
               </li>
             </ul>
           </div>
-          <div className="col-span-2">
-            <h4 className="text-[20px] text-green font-semibold mb-4">
+          <div className="lg:col-span-3 md:col-span-4 sm:col-span-6">
+            <div className="h-[100px] relative md:block hidden"></div>
+            <h4 className="text-[20px] text-green font-semibold mb-4 mt-4">
               Our Services
             </h4>
             <ul>
               <li className="mb-4">
-                <a href="#" className="text-white text-[14px] leading-[20px]">
-                  Link 1
+                <a href="#" className="text-black text-[14px] leading-[20px]">
+                  Gallery
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="text-white text-[14px] leading-[20px]">
-                  Link 2
+                <a href="#" className="text-black text-[14px] leading-[20px]">
+                  Refer and Earn
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="text-white text-[14px] leading-[20px]">
-                  Link 3
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="text-white text-[14px] leading-[20px]">
-                  Link 4
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="text-white text-[14px] leading-[20px]">
-                  Link 5
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="text-white text-[14px] leading-[20px]">
-                  Link 5
+                <a href="#" className="text-black text-[14px] leading-[20px]">
+                  Cozy Companion
                 </a>
               </li>
             </ul>
           </div>
-          <div className="col-span-5">{/* <ContactForm /> */}</div>
+          <div className="lg:col-span-3 md:col-span-4 sm:col-span-6">
+            <div className="h-[100px] relative lg:block hidden"></div>
+            <h4 className="text-[20px] text-green font-semibold mb-4 mt-4"></h4>
+            <img src="assets/images/coming_soon.png" className="w-[70%] pt-4" />
+          </div>
         </div>
       </div>
     </div>
-    <div className="bg-green py-[45px] text-center">
-      <p className="text-[14px] text-white font-medium">
-        Copyright © 2022. Website Designed by HelloPixels
+    <div className="footer">
+      <div className="cyclist"></div>
+      <div className="car"></div>
+    </div>
+    <div className="py-[30px] text-center">
+      <p className="text-[14px] text-black font-medium">
+        Copyright © 2022. Website Designed by XYZ
       </p>
     </div>
   </footer>

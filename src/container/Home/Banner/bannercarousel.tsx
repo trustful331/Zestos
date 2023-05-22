@@ -15,7 +15,7 @@ export default function bankcarousel() {
     <div className="banner-carousel h-full relative">
       <Slider {...settings}>
         <div className="banner w-full min-w-full relative text-right max-w-[847px] h-[356px] lg:h-[550px]">
-          <div className="banner-text text-left text-white absolute z-10 left-0 top-[90px] max-w-[650px] px-8 lg:top-[71px] lg:px-0 lg:px-none lg:text-black">
+          <div className="banner-text text-left absolute z-10 left-0 top-[90px] max-w-[650px] px-8 lg:top-[71px] lg:px-0 lg:px-none text-black">
             <h1 className="text-[36px] leading-[40px] font-bold lg:text-[58px] lg:leading-[64px]">
               <span> Come, live </span>
               <br />
@@ -36,13 +36,13 @@ export default function bankcarousel() {
           <div className="banner-img absolute right-0 top-0 w-full h-full lg:w-[515px] lg:rounded-[10px] overflow-hidden">
             <img
               alt=""
-              className="w-full h-full"
+              className="w-full h-full lg:object-auto object-cover"
               src="assets/images/food.webp"
             />
           </div>
         </div>
         <div className="banner w-full min-w-full relative text-right max-w-[847px] h-[356px] lg:h-[550px]">
-          <div className="banner-text text-left text-white absolute z-10 left-0 top-[90px] max-w-[650px] px-8 lg:top-[71px] lg:px-0 lg:px-none lg:text-black">
+          <div className="banner-text text-left absolute z-10 left-0 top-[90px] max-w-[650px] px-8 lg:top-[71px] lg:px-0 lg:px-none text-black">
             <h1 className="text-[36px] leading-[40px] font-bold lg:text-[58px] lg:leading-[64px]">
               <span> Facilities that give</span>
               <br />
@@ -60,13 +60,13 @@ export default function bankcarousel() {
           <div className="banner-img absolute right-0 top-0 w-full h-full lg:w-[515px] lg:rounded-[10px] overflow-hidden">
             <img
               alt=""
-              className="w-full h-full"
+              className="w-full h-full lg:object-auto object-cover"
               src="assets/images/food.webp"
             />
           </div>
         </div>
         <div className="banner w-full min-w-full relative text-right max-w-[847px] h-[356px] lg:h-[550px]">
-          <div className="banner-text text-left text-white absolute z-10 left-0 top-[90px] max-w-[650px] px-8 lg:top-[71px] lg:px-0 lg:px-none lg:text-black">
+          <div className="banner-text text-left absolute z-10 left-0 top-[90px] max-w-[650px] px-8 lg:top-[71px] lg:px-0 lg:px-none text-black">
             <h1 className="text-[36px] leading-[40px] font-bold lg:text-[58px] lg:leading-[64px]">
               <span>Homely meals that </span>
               <br />
@@ -84,13 +84,13 @@ export default function bankcarousel() {
           <div className="banner-img absolute right-0 top-0 w-full h-full lg:w-[515px] lg:rounded-[10px] overflow-hidden">
             <img
               alt=""
-              className="w-full h-full"
+              className="w-full h-full lg:object-auto object-cover"
               src="assets/images/food.webp"
             />
           </div>
         </div>
         <div className="banner w-full min-w-full relative text-right max-w-[847px] h-[356px] lg:h-[550px]">
-          <div className="banner-text text-left text-white absolute z-10 left-0 top-[90px] max-w-[650px] px-8 lg:top-[71px] lg:px-0 lg:px-none lg:text-black">
+          <div className="banner-text text-left absolute z-10 left-0 top-[90px] max-w-[650px] px-8 lg:top-[71px] lg:px-0 lg:px-none text-black">
             <h1 className="text-[36px] leading-[40px] font-bold lg:text-[58px] lg:leading-[64px]">
               <span>Never run out of</span>
               <br />
@@ -105,7 +105,7 @@ export default function bankcarousel() {
           <div className="banner-img absolute right-0 top-0 w-full h-full lg:w-[515px] lg:rounded-[10px] overflow-hidden">
             <img
               alt=""
-              className="w-full h-full"
+              className="w-full h-full lg:object-auto object-cover"
               src="assets/images/food.webp"
             />
           </div>

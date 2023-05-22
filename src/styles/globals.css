@@ -54,7 +54,6 @@ body {
 }
 
 .cities-bg {
-  height: 100vh;
   background-image: url("/assets/images/clipper.png");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -67,4 +66,86 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 80vh;
+}
+
+.footer {
+  background: url("/assets/images/footer_bg.png") no-repeat scroll center 0;
+  height: 256px;
+  width: 100%;
+  position: relative;
+}
+.cyclist {
+  background: url("/assets/images/cycle_gif.gif") no-repeat center center;
+  width: 88px;
+  height: 100px;
+  background-size: 100%;
+  bottom: 0;
+  left: 38%;
+  position: absolute;
+  -webkit-animation: myfirst 30s linear infinite;
+  animation: myfirst 30s linear infinite;
+}
+.car {
+  background: url("/assets/images/car_gif.gif") no-repeat center center;
+  width: 330px;
+  height: 105px;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  -webkit-animation: myfirst 22s linear infinite;
+  animation: myfirst 22s linear infinite;
+}
+
+@-moz-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner-carousel .slick-dots {
+    text-align: left;
+    bottom: 44px;
+    left: 22px;
+  }
+  .banner-carousel .slick-dots li.slick-active button {
+    border: 2px solid #000000;
+  }
+  .banner-carousel .slick-dots li button:before {
+    color: #000000 !important;
+  }
+  .cities-bg {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner-carousel .slick-dots {
+    text-align: left;
+    bottom: -45px;
+    left: 0px;
+  }
 }

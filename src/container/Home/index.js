@@ -16,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     AOS.init();
     const handleScroll = () => {
-      const sections = ["devices", "comfort", "features"];
+      const sections = ["devices", "comfort", "features", "app-bg"];
       const newVisibleSections = [];
       for (let i = 0; i < sections.length; i++) {
         const section = document.getElementsByClassName(sections[i])[0];
@@ -34,9 +34,11 @@ export default function Home() {
         if (sections[i] == "devices") {
           isVisible = visiblePercentage >= 30;
         } else if (sections[i] == "comfort") {
-          isVisible = visiblePercentage >= 50;
+          isVisible = visiblePercentage >= 60;
         } else if (sections[i] == "features") {
           isVisible = visiblePercentage >= 40;
+        } else if (sections[i] == "app-bg") {
+          isVisible = visiblePercentage >= 50;
         }
 
         if (isVisible) {
@@ -59,44 +61,51 @@ export default function Home() {
       {/* Banner */}
       <Banner />
       <div className="border-t">
-        <div className="flex justify-around items-center p-[30px_70px] container">
-          <div className="flex gap-2 items-center">
-            <TbBuildingEstate size={34} className="text-green" />
-            <h6 className="text-[24px] leading-[24px] text-[#232728] font-semibold">
+        <div className="flex flex-wrap lg:justify-around lg:gap-0 md:gap-8 gap-3 items-center justify-center lg:p-[30px_70px] sm:p-[30px] p-[15px] container">
+          <div className="lg:w-auto md:w-[32%] w-full flex lg:flex-row flex-col lg:gap-2 gap-4 items-center lg:border-0 border rounded-[24px] lg:p-0 md:p-8 p-5">
+            <TbBuildingEstate size={34} className="text-green lg:mb-0 mb-2" />
+            <h6 className="lg:text-[24px] md:text-[34px] sm:text-[24px] text-[16px] leading-[24px] text-[#232728] font-semibold">
               24+
             </h6>
-            <p className="text-[18px] text-[#232728]/70 font-normal">Cities</p>
+            <p className="lg:text-[22px] md:text-[18px] sm:text-[16px] text-[14px] text-[#232728]/70 font-normal">
+              Cities
+            </p>
           </div>
-          <div className="flex gap-2 items-center">
-            <TbBuildingSkyscraper size={34} className="text-green" />
-            <h6 className="text-[24px] leading-[24px] text-[#232728] font-semibold">
+          <div className="lg:w-auto md:w-[32%] w-full flex lg:flex-row flex-col lg:gap-2 gap-4 items-center lg:border-0 border rounded-[24px] lg:p-0 md:p-8 p-5">
+            <TbBuildingSkyscraper
+              size={34}
+              className="text-green lg:mb-0 mb-2"
+            />
+            <h6 className="lg:text-[24px] md:text-[34px] sm:text-[24px] text-[16px] leading-[24px] text-[#232728] font-semibold">
               450+
             </h6>
-            <p className="text-[18px] text-[#232728]/70 font-normal">
+            <p className="lg:text-[22px] md:text-[18px] sm:text-[16px] text-[14px] text-[#232728]/70 font-normal">
               Residences
             </p>
           </div>
-          <div className="flex gap-2 items-center">
-            <BiBed size={34} className="text-green" />
-            <h6 className="text-[24px] leading-[24px] text-[#232728] font-semibold">
+          <div className="lg:w-auto md:w-[32%] w-full flex lg:flex-row flex-col lg:gap-2 gap-4 items-center lg:border-0 border rounded-[24px] lg:p-0 md:p-8 p-5">
+            <BiBed size={34} className="text-green lg:mb-0 mb-2" />
+            <h6 className="lg:text-[24px] md:text-[34px] sm:text-[24px] text-[16px] leading-[24px] text-[#232728] font-semibold">
               70,000+
             </h6>
-            <p className="text-[18px] text-[#232728]/70 font-normal">Beds</p>
+            <p className="lg:text-[22px] md:text-[18px] sm:text-[16px] text-[14px] text-[#232728]/70 font-normal">
+              Beds
+            </p>
           </div>
         </div>
       </div>
       <div className="container mt-12">
-        <h2 className="text-[6rem] font-extrabold text-center">
+        <h2 className="xl:text-[6rem] md:text-[4rem] text-[2rem] font-extrabold text-center md:px-0 sm:px-6 px-[15px]">
           A Place Like{" "}
           <span className="bg-gradient-to-r from-yellow to-green text-transparent bg-clip-text">
             Home
           </span>
         </h2>
-        <div className="text-center min-w-[40vw] max-w-[20vw] mx-auto">
-          <h5 className="text-[19px] my-4 font-semibold text-black">
+        <div className="text-center md:min-w-[40vw] md:max-w-[20vw] mx-auto md:px-0 sm:px-6 px-[15px]">
+          <h5 className="md:text-[19px] text-[18px] my-4 font-semibold text-black">
             Discover Coliving Spaces That Resemble Your Home.
           </h5>
-          <p className="text-[23px] font-normal leading-[37px] text-black">
+          <p className="lg:text-[23px] md:text-[16px] text-[14px] font-normal lg:leading-[37px] leading-[28px] text-black">
             Finding perfect coliving spaces in a new city can be tiring. If you
             are a new bird in the city, then say no more. Before you say I miss
             my home, hear us out. Cozy Stay offers you a complete co-living
@@ -111,21 +120,30 @@ export default function Home() {
         </div>
       </div>
       <div className="relative mt-[200px] devices">
+        <div className="bg-black/50 absolute h-full w-full z-10" />
         <img
           src="/assets/images/device.png"
-          className={`w-[24%] absolute transition-all duration-[800ms] ${
+          className={`max-w-[451px] w-full absolute transition-all duration-[800ms] z-30  xl:translate-x-0 -translate-x-1/2 ${
             visibleSections.includes("devices")
-              ? "bottom-0 left-[15%]"
-              : "left-0 -bottom-52"
+              ? "bottom-0 xl:left-[15%] left-1/2"
+              : "xl:left-0 -bottom-52  left-1/2"
           }`}
+        />
+        <img
+          src="assets/images/device_inner.png"
+          className="absolute xl:left-[12%] bottom-[29%] w-[541px] z-20  left-1/2 xl:translate-x-0 -translate-x-1/2 transition-all duration-[800ms]"
         />
         <img
           src="/assets/images/device_bg.jpg"
           className="w-full h-[800px] object-cover"
         />
         <img
+          src="assets/images/device_inner.png"
+          className="absolute right-[12%] bottom-[29%] w-[541px] xl:opacity-100 opacity-0 z-20"
+        />
+        <img
           src="/assets/images/device.png"
-          className={`w-[24%] absolute transition-all duration-[800ms] ${
+          className={`w-[451px] absolute transition-all duration-[800ms] xl:opacity-100 opacity-0 z-30 ${
             visibleSections.includes("devices")
               ? "bottom-0 right-[15%]"
               : "right-0 -bottom-52"
@@ -134,16 +152,15 @@ export default function Home() {
       </div>
       <Products visibleSections={visibleSections} />
       <Features visibleSections={visibleSections} />
-      {/* <App /> */}
       <div
-        className="relative mt-[200px] cities-bg flex items-end"
+        className="relative mt-[200px] cities-bg flex items-end xl:h-screen sm:h-[700px] h-[500px]"
         data-aos="fade-up"
       >
         <div className="container">
-          <div className="grid grid-cols-12 gap-5">
-            <div className="col-span-4"></div>
-            <div className="col-span-8">
-              <div className="grid grid-cols-3 gap-5 mb-24 items-center">
+          <div className="grid sm:grid-cols-12 grid-cols-1 gap-5">
+            <div className="sm:col-span-4"></div>
+            <div className="sm:col-span-8">
+              <div className="grid grid-cols-3 gap-5 relative xl:bottom-[100px] bottom-[100px] items-center">
                 <div>
                   <img src="/assets/images/kochi.png" className="w-full" />
                 </div>
@@ -163,6 +180,7 @@ export default function Home() {
       </div>
       <BeatStress />
       <LiveLoveLife />
+      <App visibleSections={visibleSections} />
     </div>
   );
 }
