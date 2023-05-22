@@ -1,8 +1,8 @@
 export default function Products({ visibleSections }) {
   return (
     <div className="overflow-hidden">
-      <div className="container mt-12 pb-[50px] comfort 2xl:px-0 px-[15px]">
-        <h1 className="xl:text-[86px] lg:text-[66px] md:text-[56px] sm:text-[46px] text-[36px] font-bold mt-[90px] mb-[80px] text-center">
+      <div className="container md:mt-12  mt-10 pb-[50px] comfort 2xl:px-0 px-[15px]">
+        <h1 className="xl:text-[86px] lg:text-[66px] md:text-[56px] sm:text-[46px] text-3xl font-bold md:mt-[90px] mt-10 md:mb-[80px] mb-5 text-center">
           The Comfort of Your Home
         </h1>
         <p className="xl:text-[18px] text-[16px] text-black/50 leading-[30px] xl:w-[50vw] mx-auto text-center mb-24">

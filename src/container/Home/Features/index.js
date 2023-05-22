@@ -17,7 +17,7 @@ export default function Features({ visibleSections }) {
             <p className="text-green text-[16px] font-medium leading-[20px] mb-2">
               Why choose us
             </p>
-            <h2 className="text-[36px] leading-[40px] font-bold lg:text-[50px] lg:leading-[64px]">
+            <h2 className="md:text-[36px] text-3xl leading-[40px] font-bold lg:text-[50px] lg:leading-[64px]">
               Lorem ipsum Lorem ipsum ipsum
             </h2>
             <p className="text-[16px] leading-[28px] mb-4 mt-8">

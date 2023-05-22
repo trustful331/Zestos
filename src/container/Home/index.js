@@ -60,9 +60,9 @@ export default function Home() {
     <div>
       {/* Banner */}
       <Banner />
-      <div className="border-t">
-        <div className="flex flex-wrap lg:justify-around lg:gap-0 md:gap-8 gap-3 items-center justify-center lg:p-[30px_70px] sm:p-[30px] p-[15px] container">
-          <div className="lg:w-auto md:w-[32%] w-full flex lg:flex-row flex-col lg:gap-2 gap-4 items-center lg:border-0 border rounded-[24px] lg:p-0 md:p-8 p-5">
+      <div className="border-t md:pt-0 pt-3">
+        <div className="flex flex-wrap lg:justify-around lg:gap-0 gap-8 items-center justify-center lg:p-[30px_70px] sm:p-[30px] p-[15px] container  md:pt-0 pt-10">
+          <div className="lg:w-auto md:w-[32%] w-full flex lg:flex-row flex-col lg:gap-2 gap-4 items-center lg:shadow-none shadow-lg rounded-[24px] lg:p-0 md:p-8 p-5">
             <TbBuildingEstate size={34} className="text-green lg:mb-0 mb-2" />
             <h6 className="lg:text-[24px] md:text-[34px] sm:text-[24px] text-[16px] leading-[24px] text-[#232728] font-semibold">
               24+
@@ -71,7 +71,7 @@ export default function Home() {
               Cities
             </p>
           </div>
-          <div className="lg:w-auto md:w-[32%] w-full flex lg:flex-row flex-col lg:gap-2 gap-4 items-center lg:border-0 border rounded-[24px] lg:p-0 md:p-8 p-5">
+          <div className="lg:w-auto md:w-[32%] w-full flex lg:flex-row flex-col lg:gap-2 gap-4 items-center lg:shadow-none shadow-lg rounded-[24px] lg:p-0 md:p-8 p-5">
             <TbBuildingSkyscraper
               size={34}
               className="text-green lg:mb-0 mb-2"
@@ -83,7 +83,7 @@ export default function Home() {
               Residences
             </p>
           </div>
-          <div className="lg:w-auto md:w-[32%] w-full flex lg:flex-row flex-col lg:gap-2 gap-4 items-center lg:border-0 border rounded-[24px] lg:p-0 md:p-8 p-5">
+          <div className="lg:w-auto md:w-[32%] w-full flex lg:flex-row flex-col lg:gap-2 gap-4 items-center lg:shadow-none shadow-lg rounded-[24px] lg:p-0 md:p-8 p-5">
             <BiBed size={34} className="text-green lg:mb-0 mb-2" />
             <h6 className="lg:text-[24px] md:text-[34px] sm:text-[24px] text-[16px] leading-[24px] text-[#232728] font-semibold">
               70,000+
@@ -119,7 +119,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className="relative mt-[200px] devices">
+      <div className="relative md:mt-[200px] devices">
         <div className="bg-black/50 absolute h-full w-full z-10" />
         <img
           src="/assets/images/device.png"
@@ -153,7 +153,7 @@ export default function Home() {
       <Products visibleSections={visibleSections} />
       <Features visibleSections={visibleSections} />
       <div
-        className="relative mt-[200px] cities-bg flex items-end xl:h-screen sm:h-[700px] h-[500px]"
+        className="relative md:mt-[200px] cities-bg flex items-end xl:h-screen sm:h-[700px] h-[500px]"
         data-aos="fade-up"
       >
         <div className="container">

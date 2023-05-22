@@ -1,10 +1,10 @@
 export default function BeatStress({ visibleSections }) {
   return (
-    <div className="container-fluid mt-28 beat-stress">
+    <div className="container-fluid md:mt-28 mt-10 beat-stress">
       <div className="grid lg:grid-cols-12 items-center">
         <div className="lg:col-span-5">
-          <div className="h-[380px] flex items-center justify-center text-center">
-            <h3 className="lg:text-[7rem] md:text-[5rem] text-[3rem] text-black/90 lg:leading-[6.5rem] md:leading-[4.5rem] leading-[3rem] font-bold">
+          <div className="sm:h-[380px] h-full mb-5 flex items-center justify-center text-center">
+            <h3 className="lg:text-[7rem] md:text-[5rem] text-3xl text-black/90 lg:leading-[6.5rem] md:leading-[4.5rem] font-bold">
               beat the stress
             </h3>
           </div>
