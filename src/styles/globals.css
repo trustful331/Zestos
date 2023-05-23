@@ -14,8 +14,7 @@ html,
 body {
   height: 100%;
   scroll-behavior: smooth;
-  /* overflow-x: hidden;
-  overflow-y: scroll; */
+  color: #212529;
 }
 
 #root {
@@ -61,10 +60,6 @@ body {
 }
 
 .app-bg {
-  background-image: url("/assets/images/app.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   min-height: 80vh;
 }
 

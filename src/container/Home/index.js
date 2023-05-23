@@ -1,7 +1,5 @@
 import Banner from "./Banner";
-import React, { useEffect, useState } from "react";
-import { BiBed } from "react-icons/bi";
-import { TbBuildingEstate, TbBuildingSkyscraper } from "react-icons/tb";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Products from "./Products";
@@ -16,7 +14,7 @@ export default function Home() {
   useEffect(() => {
     AOS.init();
     const handleScroll = () => {
-      const sections = ["devices", "comfort", "features", "app-bg"];
+      const sections = ["devices", "comfort", "features"];
       const newVisibleSections = [];
       for (let i = 0; i < sections.length; i++) {
         const section = document.getElementsByClassName(sections[i])[0];
@@ -60,44 +58,10 @@ export default function Home() {
     <div>
       {/* Banner */}
       <Banner />
-      <div className="border-t md:pt-0 pt-3">
-        <div className="flex flex-wrap lg:justify-around lg:gap-0 gap-8 items-center justify-center lg:p-[30px_70px] sm:p-[30px] p-[15px] container  md:pt-0 pt-10">
-          <div className="lg:w-auto md:w-[32%] w-full flex lg:flex-row flex-col lg:gap-2 gap-4 items-center lg:shadow-none shadow-lg rounded-[24px] lg:p-0 md:p-8 p-5">
-            <TbBuildingEstate size={34} className="text-green lg:mb-0 mb-2" />
-            <h6 className="lg:text-[24px] md:text-[34px] sm:text-[24px] text-[16px] leading-[24px] text-[#232728] font-semibold">
-              24+
-            </h6>
-            <p className="lg:text-[22px] md:text-[18px] sm:text-[16px] text-[14px] text-[#232728]/70 font-normal">
-              Cities
-            </p>
-          </div>
-          <div className="lg:w-auto md:w-[32%] w-full flex lg:flex-row flex-col lg:gap-2 gap-4 items-center lg:shadow-none shadow-lg rounded-[24px] lg:p-0 md:p-8 p-5">
-            <TbBuildingSkyscraper
-              size={34}
-              className="text-green lg:mb-0 mb-2"
-            />
-            <h6 className="lg:text-[24px] md:text-[34px] sm:text-[24px] text-[16px] leading-[24px] text-[#232728] font-semibold">
-              450+
-            </h6>
-            <p className="lg:text-[22px] md:text-[18px] sm:text-[16px] text-[14px] text-[#232728]/70 font-normal">
-              Residences
-            </p>
-          </div>
-          <div className="lg:w-auto md:w-[32%] w-full flex lg:flex-row flex-col lg:gap-2 gap-4 items-center lg:shadow-none shadow-lg rounded-[24px] lg:p-0 md:p-8 p-5">
-            <BiBed size={34} className="text-green lg:mb-0 mb-2" />
-            <h6 className="lg:text-[24px] md:text-[34px] sm:text-[24px] text-[16px] leading-[24px] text-[#232728] font-semibold">
-              70,000+
-            </h6>
-            <p className="lg:text-[22px] md:text-[18px] sm:text-[16px] text-[14px] text-[#232728]/70 font-normal">
-              Beds
-            </p>
-          </div>
-        </div>
-      </div>
       <div className="container mt-12">
-        <h2 className="xl:text-[6rem] md:text-[4rem] text-[2rem] font-extrabold text-center md:px-0 sm:px-6 px-[15px]">
+        <h2 className="xl:text-[6rem] md:text-[4rem] text-[2rem] font-extrabold  text-center md:px-0 sm:px-6 px-[15px]">
           A Place Like{" "}
-          <span className="bg-gradient-to-r from-yellow to-green text-transparent bg-clip-text">
+          <span className="bg-gradient-to-r font-ananda from-yellow to-green text-transparent bg-clip-text font-extrabold inline-block">
             Home
           </span>
         </h2>
@@ -120,34 +84,15 @@ export default function Home() {
         </div>
       </div>
       <div className="relative md:mt-[200px] devices">
-        <div className="bg-black/50 absolute h-full w-full z-10" />
         <img
           src="/assets/images/device.png"
-          className={`max-w-[451px] w-full absolute transition-all duration-[800ms] z-30  xl:translate-x-0 -translate-x-1/2 ${
-            visibleSections.includes("devices")
-              ? "bottom-0 xl:left-[15%] left-1/2"
-              : "xl:left-0 -bottom-52  left-1/2"
+          className={`max-w-[50%] w-full absolute transition-all duration-[800ms] z-30 left-1/2 -translate-x-1/2 ${
+            visibleSections.includes("devices") ? "bottom-[18%]" : "bottom-0"
           }`}
         />
         <img
-          src="assets/images/device_inner.png"
-          className="absolute xl:left-[12%] bottom-[29%] w-[541px] z-20  left-1/2 xl:translate-x-0 -translate-x-1/2 transition-all duration-[800ms]"
-        />
-        <img
-          src="/assets/images/device_bg.jpg"
+          src="/assets/images/device_bg.png"
           className="w-full h-[800px] object-cover"
-        />
-        <img
-          src="assets/images/device_inner.png"
-          className="absolute right-[12%] bottom-[29%] w-[541px] xl:opacity-100 opacity-0 z-20"
-        />
-        <img
-          src="/assets/images/device.png"
-          className={`w-[451px] absolute transition-all duration-[800ms] xl:opacity-100 opacity-0 z-30 ${
-            visibleSections.includes("devices")
-              ? "bottom-0 right-[15%]"
-              : "right-0 -bottom-52"
-          }`}
         />
       </div>
       <Products visibleSections={visibleSections} />
@@ -179,8 +124,8 @@ export default function Home() {
         </div>
       </div>
       <BeatStress />
-      <LiveLoveLife />
       <App visibleSections={visibleSections} />
+      <LiveLoveLife />
     </div>
   );
 }

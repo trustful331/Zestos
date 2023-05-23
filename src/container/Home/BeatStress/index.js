@@ -1,11 +1,14 @@
-export default function BeatStress({ visibleSections }) {
+export default function BeatStress() {
   return (
     <div className="container-fluid md:mt-28 mt-10 beat-stress">
       <div className="grid lg:grid-cols-12 items-center">
         <div className="lg:col-span-5">
           <div className="sm:h-[380px] h-full mb-5 flex items-center justify-center text-center">
             <h3 className="lg:text-[7rem] md:text-[5rem] text-3xl text-black/90 lg:leading-[6.5rem] md:leading-[4.5rem] font-bold">
-              beat the stress
+              beat the{" "}
+              <span className="bg-gradient-to-r from-yellow to-green text-transparent bg-clip-text">
+                stress
+              </span>
             </h3>
           </div>
           <div>
@@ -16,7 +19,7 @@ export default function BeatStress({ visibleSections }) {
                   className="w-full max-h-[280px] min-h-[280px] object-cover z-0"
                 />
                 <p className="text-[22px] font-bold text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 opacity-0 z-10">
-                  User 1
+                  Fitness Centers
                 </p>
               </div>
               <div className="relative group before:absolute before:content-[''] before:w-full before:h-full before:top-0 before:left-0 before:bg-black/30 hover:before:bg-black/80 before:transition-all before:duration-300">
@@ -25,7 +28,7 @@ export default function BeatStress({ visibleSections }) {
                   className="w-full max-h-[280px] min-h-[280px] object-cover z-0"
                 />
                 <p className="text-[22px] font-bold text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 opacity-0 z-10">
-                  User 2
+                  Fun Zone
                 </p>
               </div>
               <div className="relative group before:absolute before:content-[''] before:w-full before:h-full before:top-0 before:left-0 before:bg-black/30 hover:before:bg-black/80 before:transition-all before:duration-300">
@@ -34,7 +37,7 @@ export default function BeatStress({ visibleSections }) {
                   className="w-full max-h-[280px] min-h-[280px] object-cover z-0"
                 />
                 <p className="text-[22px] font-bold text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 opacity-0 z-10">
-                  User 3
+                  Indoor Games
                 </p>
               </div>
               <div className="relative group before:absolute before:content-[''] before:w-full before:h-full before:top-0 before:left-0 before:bg-black/30 hover:before:bg-black/80 before:transition-all before:duration-300">
@@ -43,7 +46,7 @@ export default function BeatStress({ visibleSections }) {
                   className="w-full max-h-[280px] min-h-[280px] object-cover z-0"
                 />
                 <p className="text-[22px] font-bold text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 opacity-0 z-10">
-                  User 4
+                  Cozy Community
                 </p>
               </div>
             </div>
@@ -53,7 +56,7 @@ export default function BeatStress({ visibleSections }) {
           <div className="flex flex-col h-full">
             <img
               src="assets/images/stress.jpg"
-              className="w-full h-[560px] object-cover opacity-80"
+              className="w-full h-[560px] object-cover object-top opacity-80"
             />
             <div className="grow lg:block flex gap-4 items-center">
               <div className="h-full lg:w-2/5 flex items-center justify-center mx-auto relative lg:mt-0 mt-8 lg:px-0 px-[15px]">
