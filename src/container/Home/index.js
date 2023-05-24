@@ -10,6 +10,7 @@ import App from "./App";
 
 export default function Home() {
   const [visibleSections, setVisibleSections] = useState([]);
+  const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
     AOS.init();
@@ -54,8 +55,20 @@ export default function Home() {
       window.removeEventListener("resize", handleScroll);
     };
   }, []);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLoader(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div>
+      {showLoader && (
+        <div className="fixed inset-0 bg-black flex items-center justify-center z-50">
+          <img src="assets/images/logo_white.png" className="w-[200px]" />
+        </div>
+      )}
       {/* Banner */}
       <Banner />
       <div className="container mt-12">
@@ -86,8 +99,10 @@ export default function Home() {
       <div className="relative md:mt-[200px] devices">
         <img
           src="/assets/images/device.png"
-          className={`max-w-[50%] w-full absolute transition-all duration-[800ms] z-30 left-1/2 -translate-x-1/2 ${
-            visibleSections.includes("devices") ? "bottom-[18%]" : "bottom-0"
+          className={`md:max-w-[50%] max-w-[70%] w-full absolute transition-all duration-[800ms] z-30 left-1/2 -translate-x-1/2 ${
+            visibleSections.includes("devices")
+              ? "md:bottom-[18%] bottom-[30%]"
+              : "bottom-0"
           }`}
         />
         <img

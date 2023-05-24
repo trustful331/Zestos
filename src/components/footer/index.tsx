@@ -23,7 +23,7 @@ const Footer = () => (
               <li className="mb-4">
                 <div className="flex items-start gap-3">
                   <RiMapPin2Fill size={18} className="shrink-0 text-green" />
-                  <p className="text-black text-[14px] leading-[20px]">
+                  <p className="text-black font-Gilroy text-[14px] leading-[20px]">
                     Level 12, Rolex Tower, Sheikh Zayed Road, Near Financial
                     Centre Metro Station, Dubai, UAE
                   </p>
@@ -33,9 +33,9 @@ const Footer = () => (
                 <div className="flex items-center gap-3">
                   <GrMapLocation
                     size={18}
-                    className="shrink-0 [&_path]:stroke-black"
+                    className="shrink-0 [&_path]:stroke-green"
                   />
-                  <p className="text-black text-[14px] leading-[20px]">
+                  <p className="text-black font-Gilroy text-[14px] leading-[20px]">
                     Click for the Direction
                   </p>
                 </div>
@@ -47,7 +47,7 @@ const Footer = () => (
                     size={18}
                     className="shrink-0 text-green"
                   />
-                  <p className="text-black text-[14px] leading-[20px]">
+                  <p className="text-black font-Gilroy text-[14px] leading-[20px]">
                     +971 4 2690673
                   </p>
                 </div>
@@ -55,7 +55,7 @@ const Footer = () => (
               <li className="mb-4">
                 <div className="flex items-center gap-3">
                   <FaPaperPlane size={18} className="shrink-0 text-green" />
-                  <p className="text-black text-[14px] leading-[20px]">
+                  <p className="text-black font-Gilroy text-[14px] leading-[20px]">
                     sales@aaconsultancy.ae
                   </p>
                 </div>

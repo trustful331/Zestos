@@ -7,7 +7,7 @@ import { VscVerifiedFilled } from "react-icons/vsc";
 
 export default function App() {
   return (
-    <section className="overflow-hidden">
+    <section className="overflow-hidden md:mt-0 mt-10">
       <div className="container-fluid">
         <div className="grid md:grid-cols-12">
           <div className="grid md:grid-cols-3 border-t divide-x divide-y col-span-6">

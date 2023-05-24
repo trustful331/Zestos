@@ -1,14 +1,9 @@
 import { Transition, Menu } from "@headlessui/react";
 import Link from "next/link";
 import { Fragment, useState } from "react";
-import {
-  HiChevronDown,
-  HiOutlineChevronDown,
-  HiOutlineMenu,
-} from "react-icons/hi";
+import { HiOutlineChevronDown, HiOutlineMenu } from "react-icons/hi";
 import ButtonTo from "../Button";
-import AboutUsPopup from "../aboutuspopup";
-import { BsFillTelephoneFill } from "react-icons/bs";
+import LoginPopup from "../loginpopup";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -28,14 +23,14 @@ export default function Header() {
               <li className="h-[40px] flex items-center">
                 <Link
                   href="/"
-                  className="text-[16px] font-normal text-black/70 hover:text-green"
+                  className="text-[16px] font-normal  hover:text-green"
                 >
                   Explore Residences
                 </Link>
               </li>
               <li className="group relative h-[40px] flex items-center">
                 <Link href="/">
-                  <a className="text-[16px] font-normal text-black/70 hover:text-green flex items-center gap-2">
+                  <a className="text-[16px] font-normal  hover:text-green flex items-center gap-2">
                     Know More
                     <HiOutlineChevronDown
                       size={22}
@@ -54,8 +49,7 @@ export default function Header() {
               </li>
               <li>
                 <ButtonTo
-                  text="Request a callback"
-                  prefix={<BsFillTelephoneFill size={18} />}
+                  text="Login"
                   className="bg-green rounded-lg text-white px-6 py-2 border shadow-lg flex items-center gap-3"
                   onClick={openPopup}
                 />
@@ -114,7 +108,7 @@ export default function Header() {
           </nav>
         </div>
       </div>
-      <AboutUsPopup open={open} openPopup={openPopup} hidePopup={hidePopup} />
+      <LoginPopup open={open} hidePopup={hidePopup} />
     </header>
   );
 }
