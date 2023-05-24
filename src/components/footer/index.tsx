@@ -1,9 +1,7 @@
 import { RiMapPin2Fill } from "react-icons/ri";
 import { GrMapLocation } from "react-icons/gr";
-import { GoDeviceMobile } from "react-icons/go";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaPaperPlane } from "react-icons/fa";
-// import ContactForm from "../contactform";
 const Footer = () => (
   <footer className="overflow-hidden">
     <div className="pt-[70px]">
@@ -11,10 +9,7 @@ const Footer = () => (
         <div className="grid sm:grid-cols-12 grid-cols-1 lg:gap-10 gap-6">
           <div className="lg:col-span-3 md:col-span-4 sm:col-span-6">
             <div className="h-[100px] relative">
-              <img
-                src="assets/images/logo.png"
-                className="absolute top-[-53px] left-[-60px] h-[200px]"
-              />
+              <img src="assets/images/logo.png" className="w-20" />
             </div>
             <h4 className="text-[20px] text-green font-semibold mb-4 mt-4">
               Contact Us

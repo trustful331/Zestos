@@ -1,10 +1,18 @@
+import { useEffect } from "react";
+import AOS from "aos";
 export default function BeatStress() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="container-fluid md:mt-28 mt-10 beat-stress">
       <div className="grid lg:grid-cols-12 items-center">
         <div className="lg:col-span-5">
           <div className="sm:h-[380px] h-full mb-5 flex items-center justify-center text-center">
-            <h3 className="lg:text-[7rem] md:text-[5rem] text-3xl text-black/90 lg:leading-[6.5rem] md:leading-[4.5rem] font-bold">
+            <h3
+              className="lg:text-[7rem] md:text-[5rem] text-3xl text-black/90 lg:leading-[6.5rem] md:leading-[4.5rem] font-bold"
+              data-aos="fade-up"
+            >
               beat the{" "}
               <span className="bg-gradient-to-r from-yellow to-green text-transparent bg-clip-text">
                 stress
@@ -60,7 +68,10 @@ export default function BeatStress() {
             />
             <div className="grow lg:block flex gap-4 items-center">
               <div className="h-full lg:w-2/5 flex items-center justify-center mx-auto relative lg:mt-0 mt-8 lg:px-0 px-[15px]">
-                <p className="text-[18px] text-black/70 font-normal z-10 relative">
+                <p
+                  className="text-[18px] text-black/70 font-normal z-10 relative"
+                  data-aos="fade-up"
+                >
                   Don't let your workload knock you down. Flush out the stress
                   with our fun amenities and community-based events specially
                   designed to relax and rejuvenate you. Just like a wise man

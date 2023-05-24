@@ -15,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     AOS.init();
     const handleScroll = () => {
-      const sections = ["devices", "comfort", "features"];
+      const sections = ["devices", "features"];
       const newVisibleSections = [];
       for (let i = 0; i < sections.length; i++) {
         const section = document.getElementsByClassName(sections[i])[0];
@@ -110,7 +110,7 @@ export default function Home() {
           className="w-full h-[800px] object-cover"
         />
       </div>
-      <Products visibleSections={visibleSections} />
+      <Products />
       <Features visibleSections={visibleSections} />
       <div
         className="relative md:mt-[200px] cities-bg flex items-end xl:h-screen sm:h-[700px] h-[500px]"
@@ -139,7 +139,7 @@ export default function Home() {
         </div>
       </div>
       <BeatStress />
-      <App visibleSections={visibleSections} />
+      <App />
       <LiveLoveLife />
     </div>
   );
