@@ -7,6 +7,7 @@ import Features from "./Features";
 import BeatStress from "./BeatStress";
 import LiveLoveLife from "./LiveLoveLife";
 import App from "./App";
+import Testimonials from "./Testimonials";
 
 export default function Home() {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -138,6 +139,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Testimonials />
       <BeatStress />
       <App />
       <LiveLoveLife />

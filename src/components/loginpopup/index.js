@@ -38,7 +38,7 @@ function LoginPopup({ open, hidePopup }) {
                   </label>
                   <OtpInput />
                   <label className="text-[16px] font-medium mb-1 inline-block">
-                    Latest pin
+                    New pin
                   </label>
                   <OtpInput />
                   <div className="leading-[16px] font-light text-black mt-5">

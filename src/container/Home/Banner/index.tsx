@@ -1,4 +1,3 @@
-import { FiArrowRight } from "react-icons/fi";
 import BannerCarousel from "./bannercarousel";
 export default function Banner() {
   return (

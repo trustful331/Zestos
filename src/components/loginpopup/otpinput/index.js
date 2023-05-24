@@ -2,11 +2,11 @@ import PinInput from "react-pin-input";
 
 const OtpInput = () => {
   return (
-    <div className="flex mb-4">
+    <div className="flex mb-4 max-w-[300px]">
       <PinInput
         initialValue={""}
         placeholder="-"
-        length={7}
+        length={4}
         type="numeric"
         inputMode="number"
         style={{ display: "flex", columnGap: "8px" }}

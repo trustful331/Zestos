@@ -98,6 +98,7 @@ input[type="checkbox"] {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+  border: 1px solid #0b7a75;
 }
 input[type="radio"]:checked,
 input[type="checkbox"]:checked {
