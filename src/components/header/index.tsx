@@ -15,7 +15,7 @@ export default function Header() {
   };
   return (
     <header className="sticky top-0 z-50 bg-white shadow">
-      <div className={`container mx-auto md:px-0 px-6`}>
+      <div className={`container mx-auto xl:px-0 px-6`}>
         <div className="flex items-center justify-between min-h-[70px]">
           <img src="assets/images/logo.png" className="w-12 shrink-0" />
           <nav className="flex items-center">

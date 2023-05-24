@@ -6,15 +6,16 @@ export default function BeatStress() {
   }, []);
   return (
     <div className="container-fluid md:mt-28 mt-10 beat-stress">
+      <hr className="mt-20 mb-10 md:hidden" />
       <div className="grid lg:grid-cols-12 items-center">
         <div className="lg:col-span-5">
           <div className="sm:h-[380px] h-full mb-5 flex items-center justify-center text-center">
             <h3
-              className="lg:text-[7rem] md:text-[5rem] text-3xl text-black/90 lg:leading-[6.5rem] md:leading-[4.5rem] font-bold"
+              className="lg:text-[7rem] text-[5rem] text-black/90 lg:leading-[6.5rem] md:leading-[4.5rem] font-bold md:px-12"
               data-aos="fade-up"
             >
               beat the{" "}
-              <span className="bg-gradient-to-r from-yellow to-green text-transparent bg-clip-text">
+              <span className="bg-gradient-to-r from-yellow to-green text-transparent bg-clip-text block">
                 stress
               </span>
             </h3>
@@ -81,7 +82,7 @@ export default function BeatStress() {
                 </p>
                 <img
                   src="assets/images/beat_icon.png"
-                  className="lg:w-[180px] w-[100px] lg:absolute lg:-right-32 lg:top-1/2 transform lg:-translate-y-1/2 z-0"
+                  className="lg:w-[80px] w-[40px] lg:absolute lg:-right-32 lg:top-1/2 transform lg:-translate-y-1/2 z-0"
                 />
               </div>
             </div>

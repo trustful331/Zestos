@@ -33,7 +33,12 @@ export default function Testimonials() {
   return (
     <div className="pb-32 text-gray-800 text-center md:mt-[100px] overflow-hidden">
       <div className="container [&_ul]:-bottom-[55px] mb-12">
-        <h2 className="text-3xl font-bold mb-12">Testimonials</h2>
+        <hr className="my-10 md:hidden" />
+        <h2 className="xl:text-[6rem] sm:text-[5rem] text-[3rem]  font-extrabold  text-center md:px-0 sm:px-6 px-[15px] mb-12">
+          <span className="bg-gradient-to-r font-ananda from-yellow to-green text-transparent bg-clip-text font-extrabold inline-block">
+            Testimonials
+          </span>
+        </h2>
         <Slider {...settings}>
           <div className="p-2">
             <div className="bg-white block rounded-lg shadow-lg">

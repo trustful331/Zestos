@@ -11,8 +11,8 @@ const OtpInput = () => {
       style={{ display: "flex", columnGap: "8px" }}
       inputStyle={{
         flexGrow: 1,
-        width: "100%",
-        height: "45px",
+        width: "72px",
+        height: "72px",
         color: "#6469E4",
         fontSize: "30px",
         borderWidth: "1px",

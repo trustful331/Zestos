@@ -17,7 +17,7 @@ export default function App() {
     <section>
       <div className="container">
         <h2
-          className="xl:text-[6rem] md:text-[4rem] text-[2rem] font-extrabold  text-center md:px-0 sm:px-6 px-[15px]"
+          className="xl:text-[6rem] sm:text-[5rem] text-[3rem] font-extrabold  text-center md:px-0 sm:px-6 px-[15px]"
           data-aos="fade-up"
         >
           One Tap{" "}
@@ -26,7 +26,7 @@ export default function App() {
           </span>
         </h2>
         <div
-          className="text-center md:min-w-[50vw] md:max-w-[30vw] mx-auto md:px-0 sm:px-6 px-[15px] md:mt-20"
+          className="text-center md:min-w-[50vw] md:max-w-[30vw] mx-auto md:px-0 sm:px-6 px-[15px] mt-10 md:mt-20"
           data-aos="fade-up"
         >
           <p className="lg:text-[20px] md:text-[16px] text-[14px] font-normal lg:leading-[30px] leading-[28px] text-black/70">
@@ -35,30 +35,26 @@ export default function App() {
             lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
             ipsum lorem ipsum
           </p>
-          <div className="flex items-center justify-center gap-3">
-            <button className="mt-11 mb-12 border-black rounded-md text-black px-2 py-1.5 border shadow-lg flex items-center gap-3">
+          <div className="flex sm:flex-row flex-col items-center justify-center gap-3 my-10">
+            <button className=" border-black/20 hover:opacity-70 rounded-2xl text-black/80 px-10 py-1.5 border shadow-md flex items-center gap-3">
               <div className="flex items-center gap-1">
-                <HiOutlineDeviceMobile size={40} />
+                <HiOutlineDeviceMobile size={34} />
                 <div>
-                  <p className="text-[15px] text-left leading-[1]">
+                  <p className="text-xs text-left text-black/80">
                     Available on the
                   </p>
-                  <h6 className="text-[22px] text-left leading-[1]">
-                    App Store
-                  </h6>
+                  <h6 className="text-base text-left">App Store</h6>
                 </div>
               </div>
             </button>
-            <button className="mt-11 mb-12 border-black rounded-md text-black px-2 py-1.5 border shadow-lg flex items-center gap-3">
+            <button className="border-black/20 hover:opacity-70 rounded-2xl text-black/80 px-10 py-1.5 border shadow-md flex items-center gap-3">
               <div className="flex items-center gap-1">
-                <BsGooglePlay size={40} />
+                <BsGooglePlay size={26} />
                 <div>
-                  <p className="text-[12px] text-left leading-[1] uppercase">
+                  <p className="text-xs text-left uppercase text-black/80">
                     Android app on
                   </p>
-                  <h6 className="text-[22px] text-left leading-[1]">
-                    App Store
-                  </h6>
+                  <h6 className="text-base text-left">App Store</h6>
                 </div>
               </div>
             </button>

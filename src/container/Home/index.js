@@ -100,8 +100,8 @@ export default function Home() {
       <div className="relative md:mt-[200px] devices">
         <img
           src="/assets/images/device.png"
-          className={`2xl:w-[unset] xl:w-[25%] lg:w-[32%] absolute transition-all duration-[800ms] z-30 left-1/2 -translate-x-1/2 ${
-            visibleSections.includes("devices") ? "bottom-0" : "-bottom-12"
+          className={`xl:w-[24%] lg:w-[32%] absolute transition-all duration-[800ms] z-30 left-1/2 -translate-x-1/2 ${
+            visibleSections.includes("devices") ? "bottom-0" : "-bottom-32"
           }`}
         />
         <img
