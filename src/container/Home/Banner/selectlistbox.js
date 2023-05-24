@@ -13,7 +13,7 @@ export default function SelectListBox() {
           <label className="block truncate text-black text-[15px] font-semibold leading-[21px]">
             Choose Property Type
           </label>
-          <span className="block truncate font-normal text-black text-[14px]">
+          <span className="block truncate font-normal text-gray-500 text-[14px] font-Lato">
             {selected.name}
           </span>
           <span className="pointer-events-none absolute inset-y-0 right-4 flex items-center pr-2">

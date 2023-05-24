@@ -29,7 +29,7 @@ export default function AutoCompleteBox() {
               Find in and around…
             </label>
             <Combobox.Input
-              className="w-full border-none outline-0 pl-3 pr-10 text-[14px] leading-5 text-gray-900 focus:ring-0"
+              className="w-full border-none outline-0 pl-3 pr-10 text-[14px] leading-5 text-gray-500 focus:ring-0 placeholder:text-gray-500 font-Lato"
               displayValue={(person) => person.name}
               onChange={(event) => setQuery(event.target.value)}
             />
