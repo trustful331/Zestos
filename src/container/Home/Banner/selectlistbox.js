@@ -8,8 +8,8 @@ export default function SelectListBox() {
   const [selected, setSelected] = useState(people[0]);
   return (
     <Listbox value={selected} onChange={setSelected}>
-      <div className="relative h-full min-w-[280px]">
-        <Listbox.Button className="relative w-full cursor-default rounded-[10px] bg-white py-2 pl-5 pr-10 text-left h-full">
+      <div className="relative h-full sm:min-w-[280px] min-w-full">
+        <Listbox.Button className="relative w-full cursor-default rounded-[10px] bg-white sm:py-2 sm:pl-5 pr-10 text-left h-full">
           <label className="block truncate text-black text-[15px] font-semibold leading-[21px]">
             Choose Property Type
           </label>

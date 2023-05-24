@@ -100,10 +100,8 @@ export default function Home() {
       <div className="relative md:mt-[200px] devices">
         <img
           src="/assets/images/device.png"
-          className={`md:max-w-[50%] max-w-[70%] w-full absolute transition-all duration-[800ms] z-30 left-1/2 -translate-x-1/2 ${
-            visibleSections.includes("devices")
-              ? "md:bottom-[18%] bottom-[30%]"
-              : "bottom-0"
+          className={`2xl:w-[unset] xl:w-[25%] lg:w-[32%] absolute transition-all duration-[800ms] z-30 left-1/2 -translate-x-1/2 ${
+            visibleSections.includes("devices") ? "bottom-0" : "-bottom-12"
           }`}
         />
         <img
@@ -139,8 +137,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Testimonials />
       <BeatStress />
+      <Testimonials />
       <App />
       <LiveLoveLife />
     </div>

@@ -62,10 +62,12 @@ export default function BeatStress() {
         </div>
         <div className="lg:col-span-7 h-full">
           <div className="flex flex-col h-full">
-            <img
-              src="assets/images/stress.jpg"
-              className="w-full h-[560px] object-cover object-top opacity-80"
-            />
+            <div className="bg-green/50">
+              <img
+                src="assets/images/stress.png"
+                className="w-full h-[560px] object-contain object-center opacity-80"
+              />
+            </div>
             <div className="grow lg:block flex gap-4 items-center">
               <div className="h-full lg:w-2/5 flex items-center justify-center mx-auto relative lg:mt-0 mt-8 lg:px-0 px-[15px]">
                 <p

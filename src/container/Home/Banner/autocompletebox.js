@@ -22,14 +22,14 @@ export default function AutoCompleteBox() {
 
   return (
     <Combobox value={selected} onChange={setSelected}>
-      <div className="relative mt-1 grow">
+      <div className="relative mt-1 grow sm:min-w-0 min-w-full">
         <div className="relative w-full cursor-default overflow-hidden text-left">
           <Combobox.Button className="text-left">
-            <label className="block truncate text-black text-[15px] font-semibold leading-[21px] pl-3">
+            <label className="block truncate text-black text-[15px] font-semibold leading-[21px] sm:pl-3">
               Find in and around…
             </label>
             <Combobox.Input
-              className="w-full border-none outline-0 pl-3 pr-10 text-[14px] leading-5 text-gray-500 focus:ring-0 placeholder:text-gray-500 font-Lato"
+              className="w-full border-none outline-0 sm:pl-3 pr-10 text-[14px] leading-5 text-gray-500 focus:ring-0 placeholder:text-gray-500 font-Lato"
               displayValue={(person) => person.name}
               onChange={(event) => setQuery(event.target.value)}
             />

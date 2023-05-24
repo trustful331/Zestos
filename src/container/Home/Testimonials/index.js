@@ -31,7 +31,7 @@ const settings = {
 };
 export default function Testimonials() {
   return (
-    <div className="mb-32 text-gray-800 text-center md:mt-[100px]">
+    <div className="pb-32 text-gray-800 text-center md:mt-[100px] overflow-hidden">
       <div className="container [&_ul]:-bottom-[55px] mb-12">
         <h2 className="text-3xl font-bold mb-12">Testimonials</h2>
         <Slider {...settings}>
