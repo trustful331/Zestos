@@ -3,7 +3,7 @@ import React from "react";
 
 import { motion } from "framer-motion";
 
-export default function Features() {
+export default function Products() {
   const data = [
     {
       title: "Clean bathroom",

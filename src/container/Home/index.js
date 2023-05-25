@@ -17,7 +17,7 @@ export default function Home() {
   useEffect(() => {
     AOS.init();
     const handleScroll = () => {
-      const sections = ["devices", "features"];
+      const sections = ["devices"];
       const newVisibleSections = [];
       for (let i = 0; i < sections.length; i++) {
         const section = document.getElementsByClassName(sections[i])[0];
@@ -31,16 +31,7 @@ export default function Home() {
           ) /
             sectionHeight) *
           100;
-        let isVisible;
-        if (sections[i] == "devices") {
-          isVisible = visiblePercentage >= 30;
-        } else if (sections[i] == "comfort") {
-          isVisible = visiblePercentage >= 60;
-        } else if (sections[i] == "features") {
-          isVisible = visiblePercentage >= 40;
-        } else if (sections[i] == "app-bg") {
-          isVisible = visiblePercentage >= 50;
-        }
+        let isVisible = visiblePercentage >= 30;
 
         if (isVisible) {
           newVisibleSections.push(sections[i]);
@@ -106,7 +97,7 @@ export default function Home() {
           }`}
         />
         <img
-          src="/assets/images/device_bg.png"
+          src="/assets/images/device_bg.jpeg"
           className="w-full h-[800px] object-cover"
         />
       </div>
