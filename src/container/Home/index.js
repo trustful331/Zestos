@@ -7,6 +7,7 @@ import Features from "./Features";
 import BeatStress from "./BeatStress";
 import LiveLoveLife from "./LiveLoveLife";
 import App from "./App";
+import Popular from "./Popular";
 import Testimonials from "./Testimonials";
 
 export default function Home() {
@@ -141,6 +142,7 @@ export default function Home() {
       <Testimonials />
       <App />
       <LiveLoveLife />
+      <Popular />
     </div>
   );
 }
